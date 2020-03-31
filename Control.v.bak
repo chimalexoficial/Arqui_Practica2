@@ -33,7 +33,7 @@ localparam I_Type_ORI = 6'h0d;
 reg [10:0] ControlValues;
 
 always@(OP) begin
-	casex(OP)
+	case(OP)
 		R_Type:       ControlValues= 11'b1_001_00_00_111;
 
 		
